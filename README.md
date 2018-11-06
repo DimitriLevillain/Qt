@@ -1,1 +1,0 @@
-# Apprendre_QT
