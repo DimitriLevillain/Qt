@@ -5,6 +5,7 @@
 #include <QTcpServer>
 #include <QProcess>
 #include <QTcpSocket>
+#include <QHostInfo>
 
 namespace Ui {
 class ServeurWidget;
@@ -26,6 +27,10 @@ private slots:
     void onQTcpServer_newConnection();
 
     void onQTcpSocket_readyRead();
+
+    void onQProcess_readyReadStandartOutput();
+
+    void onQTcpSocket_disconnected();
 
 private:
     Ui::ServeurWidget *ui;
